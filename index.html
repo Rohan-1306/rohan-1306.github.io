@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rohan Mate — Penetration Tester</title>
+<meta name="description" content="Rohan Mate — Cybersecurity portfolio. VAPT, SIEM, malware analysis and security research.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ================= NAV ================= -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#recon" class="nav-brand">RM<span class="dot">_</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#recon">recon</a>
+      <a href="#profile">profile</a>
+      <a href="#arsenal">arsenal</a>
+      <a href="#findings">findings</a>
+      <a href="#contact">contact</a>
+    </nav>
+    <div class="session">
+      <span class="session-dot" aria-hidden="true"></span>
+      session active
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+<!-- ================= HERO / RECON ================= -->
+<section id="recon" class="section hero">
+  <div class="hero-grid">
+    <div class="hero-text">
+      <p class="eyebrow mono">// initiating recon</p>
+      <h1 class="hero-title">
+        <span class="type-line" id="typeTarget"></span><span class="cursor" aria-hidden="true">_</span>
+      </h1>
+      <p class="hero-role mono">Penetration Tester <span class="sep">·</span> VAPT &amp; Security Research</p>
+      <p class="hero-desc">
+        I find the way in before someone with worse intentions does. Currently building
+        toward eJPT and OSCP, coming off a cybersecurity internship investigating real
+        fraud cases at Thane Cyber Police Station.
+      </p>
+      <div class="hero-actions">
+        <a href="#findings" class="btn btn-primary">View findings</a>
+        <a href="resume.pdf" class="btn btn-ghost" download>Download resume ↓</a>
+      </div>
+      <div class="hero-links mono">
+        <a href="https://github.com/yourusername" target="_blank" rel="noopener">github</a>
+        <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener">linkedin</a>
+        <a href="mailto:you@example.com">email</a>
+      </div>
+    </div>
+
+    <div class="hero-frame">
+      <div class="target-card">
+        <div class="target-corner tl"></div>
+        <div class="target-corner tr"></div>
+        <div class="target-corner bl"></div>
+        <div class="target-corner br"></div>
+        <div class="target-photo" id="targetPhoto">
+          <span class="target-initials">RM</span>
+          <!-- Replace this block with:
+          <img src="assets/profile.jpg" alt="Rohan Mate"> -->
+        </div>
+        <div class="target-label mono">
+          <span>target_profile.jpg</span>
+          <span class="target-status">LOCKED</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-hint mono" aria-hidden="true">scroll to continue ↓</div>
+</section>
+
+<!-- ================= PROFILE / ABOUT ================= -->
+<section id="profile" class="section">
+  <div class="section-head">
+    <p class="eyebrow mono">01 // profile</p>
+    <h2>Who's behind the keyboard</h2>
+  </div>
+
+  <div class="profile-grid">
+    <div class="profile-bio">
+      <p>
+        I'm a BCA graduate from Tilak Maharashtra Vidyapeeth, currently transitioning out of
+        a cybersecurity internship at Thane Cyber Police Station, where I worked on real
+        investigative cases — including static and dynamic malware analysis on a fraudulent
+        banking APK using apktool, jadx, MobSF and Frida.
+      </p>
+      <p>
+        I'm focused on offensive security: web and mobile VAPT, Active Directory attack paths,
+        and turning raw findings into reports that actually get vulnerabilities fixed. eJPT is
+        in progress, OSCP is next.
+      </p>
+    </div>
+
+    <div class="dossier mono">
+      <div class="dossier-row"><span>location</span><span>Mumbai, India</span></div>
+      <div class="dossier-row"><span>focus</span><span>Web &amp; mobile VAPT</span></div>
+      <div class="dossier-row"><span>status</span><span class="highlight">seeking full-time roles</span></div>
+      <div class="dossier-row"><span>cert_active</span><span>eJPT — in progress</span></div>
+      <div class="dossier-row"><span>cert_next</span><span>OSCP</span></div>
+      <div class="dossier-row"><span>education</span><span>BCA, Tilak Maharashtra Vidyapeeth</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ARSENAL / SKILLS ================= -->
+<section id="arsenal" class="section">
+  <div class="section-head">
+    <p class="eyebrow mono">02 // arsenal</p>
+    <h2>Tools of the trade</h2>
+  </div>
+
+  <div class="arsenal-grid">
+    <div class="arsenal-cat">
+      <h3 class="mono">recon &amp; enumeration</h3>
+      <ul class="tool-list">
+        <li>Nmap</li>
+        <li>Wireshark</li>
+      </ul>
+    </div>
+    <div class="arsenal-cat">
+      <h3 class="mono">exploitation</h3>
+      <ul class="tool-list">
+        <li>Metasploit</li>
+        <li>Burp Suite</li>
+        <li>Sqlmap</li>
+      </ul>
+    </div>
+    <div class="arsenal-cat">
+      <h3 class="mono">mobile &amp; malware analysis</h3>
+      <ul class="tool-list">
+        <li>MobSF</li>
+        <li>apktool / jadx</li>
+        <li>Frida</li>
+        <li>mitmproxy</li>
+      </ul>
+    </div>
+    <div class="arsenal-cat">
+      <h3 class="mono">detection &amp; monitoring</h3>
+      <ul class="tool-list">
+        <li>Splunk</li>
+        <li>Wazuh</li>
+      </ul>
+    </div>
+    <div class="arsenal-cat">
+      <h3 class="mono">platform</h3>
+      <ul class="tool-list">
+        <li>Kali Linux</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="timeline">
+    <div class="timeline-item">
+      <span class="timeline-marker"></span>
+      <div class="timeline-content">
+        <p class="mono timeline-date">2026</p>
+        <h4>Cybersecurity Intern — Thane Cyber Police Station</h4>
+        <p class="timeline-desc">Investigated real fraud cases including malware analysis on a fraudulent RTO APK used for SMS interception and bank fraud.</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+      <span class="timeline-marker"></span>
+      <div class="timeline-content">
+        <p class="mono timeline-date">[add year]</p>
+        <h4>BCA — Tilak Maharashtra Vidyapeeth</h4>
+        <p class="timeline-desc">CGPA 7.13</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FINDINGS / PROJECTS ================= -->
+<section id="findings" class="section">
+  <div class="section-head">
+    <p class="eyebrow mono">03 // findings</p>
+    <h2>Project write-ups</h2>
+    <p class="section-sub">Click any entry to expand the full report. Status reflects where each project actually stands — no vaporware.</p>
+  </div>
+
+  <div class="findings-list" id="findingsList">
+
+    <article class="finding" data-status="progress">
+      <button class="finding-head" aria-expanded="false">
+        <div class="finding-head-left">
+          <span class="status-badge status-progress">in progress</span>
+          <h3>GOAD-Light — Active Directory Attack Lab</h3>
+        </div>
+        <span class="finding-chevron">+</span>
+      </button>
+      <div class="finding-body">
+        <p class="finding-summary">
+          A scaled-down Active Directory lab — one domain controller, two workstations —
+          built to fit 16GB of RAM while still covering a full attack chain from initial
+          foothold to Domain Admin.
+        </p>
+        <div class="finding-detail">
+          <div class="finding-field"><span class="mono">objective</span><p>Demonstrate a complete AD attack path on constrained hardware.</p></div>
+          <div class="finding-field"><span class="mono">methodology</span><p>Kerberoasting for credential access, ACL abuse for privilege escalation, lateral movement across workstations, culminating in Domain Admin compromise.</p></div>
+          <div class="finding-field"><span class="mono">key_finding</span><p>[Fill in once the lab write-up is complete — this is where the actual chain and screenshots go.]</p></div>
+          <div class="finding-field"><span class="mono">outcome</span><p>[Add: what a hiring manager should take away from this in one line.]</p></div>
+        </div>
+        <div class="tag-row">
+          <span class="tag">Active Directory</span>
+          <span class="tag">Kerberoasting</span>
+          <span class="tag">Impacket</span>
+          <span class="tag">BloodHound</span>
+        </div>
+        <a href="#" class="finding-link mono">read full report →</a>
+      </div>
+    </article>
+
+    <article class="finding" data-status="planned">
+      <button class="finding-head" aria-expanded="false">
+        <div class="finding-head-left">
+          <span class="status-badge status-planned">planned</span>
+          <h3>PCAP Traffic Analysis — Wireshark Deep Dive</h3>
+        </div>
+        <span class="finding-chevron">+</span>
+      </button>
+      <div class="finding-body">
+        <p class="finding-summary">
+          Packet capture analysis identifying malicious traffic patterns, protocol
+          anomalies, and indicators of compromise from a sample capture set.
+        </p>
+        <div class="finding-detail">
+          <div class="finding-field"><span class="mono">objective</span><p>[Fill in the scenario — e.g. identifying C2 beaconing in a provided pcap.]</p></div>
+          <div class="finding-field"><span class="mono">methodology</span><p>[Wireshark filters, tshark scripting, protocol dissection steps.]</p></div>
+          <div class="finding-field"><span class="mono">key_finding</span><p>[The specific anomaly or IOC you found.]</p></div>
+          <div class="finding-field"><span class="mono">outcome</span><p>[What it demonstrates about your analysis process.]</p></div>
+        </div>
+        <div class="tag-row">
+          <span class="tag">Wireshark</span>
+          <span class="tag">tshark</span>
+          <span class="tag">Network Forensics</span>
+        </div>
+        <a href="#" class="finding-link mono">read full report →</a>
+      </div>
+    </article>
+
+    <article class="finding" data-status="planned">
+      <button class="finding-head" aria-expanded="false">
+        <div class="finding-head-left">
+          <span class="status-badge status-planned">planned</span>
+          <h3>Wazuh SIEM Deployment</h3>
+        </div>
+        <span class="finding-chevron">+</span>
+      </button>
+      <div class="finding-body">
+        <p class="finding-summary">
+          A scoped SIEM build detecting and alerting on common attack techniques,
+          mapped to MITRE ATT&amp;CK.
+        </p>
+        <div class="finding-detail">
+          <div class="finding-field"><span class="mono">objective</span><p>[What attack techniques the deployment detects.]</p></div>
+          <div class="finding-field"><span class="mono">methodology</span><p>[Wazuh agent setup, log sources, detection rules written.]</p></div>
+          <div class="finding-field"><span class="mono">key_finding</span><p>[A specific detection you built and validated.]</p></div>
+          <div class="finding-field"><span class="mono">outcome</span><p>[Alerts generated, false positive rate, coverage achieved.]</p></div>
+        </div>
+        <div class="tag-row">
+          <span class="tag">Wazuh</span>
+          <span class="tag">SIEM</span>
+          <span class="tag">MITRE ATT&amp;CK</span>
+          <span class="tag">Log Analysis</span>
+        </div>
+        <a href="#" class="finding-link mono">read full report →</a>
+      </div>
+    </article>
+
+    <article class="finding" data-status="planned">
+      <button class="finding-head" aria-expanded="false">
+        <div class="finding-head-left">
+          <span class="status-badge status-planned">planned</span>
+          <h3>Responsible Disclosure</h3>
+        </div>
+        <span class="finding-chevron">+</span>
+      </button>
+      <div class="finding-body">
+        <p class="finding-summary">
+          Vulnerability findings reported through HackerOne / Bugcrowd public bug
+          bounty programs, disclosed responsibly and in scope.
+        </p>
+        <div class="finding-detail">
+          <div class="finding-field"><span class="mono">objective</span><p>[Which program, which class of vulnerability targeted.]</p></div>
+          <div class="finding-field"><span class="mono">methodology</span><p>[Recon and testing approach within program scope.]</p></div>
+          <div class="finding-field"><span class="mono">key_finding</span><p>[Vulnerability class found, e.g. IDOR, once disclosed and resolved.]</p></div>
+          <div class="finding-field"><span class="mono">outcome</span><p>[Program response, resolution status.]</p></div>
+        </div>
+        <div class="tag-row">
+          <span class="tag">Bug Bounty</span>
+          <span class="tag">Responsible Disclosure</span>
+          <span class="tag">Web Security</span>
+        </div>
+        <a href="#" class="finding-link mono">read full report →</a>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="section contact-section">
+  <div class="section-head">
+    <p class="eyebrow mono">04 // contact</p>
+    <h2>Open to full-time VAPT roles</h2>
+    <p class="section-sub">Recruiters, hiring managers, or fellow security people — reach out directly.</p>
+  </div>
+
+  <div class="contact-grid mono">
+    <a href="mailto:you@example.com" class="contact-card">
+      <span class="contact-label">email</span>
+      <span class="contact-value">you@example.com</span>
+    </a>
+    <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener" class="contact-card">
+      <span class="contact-label">linkedin</span>
+      <span class="contact-value">/in/yourusername</span>
+    </a>
+    <a href="https://github.com/yourusername" target="_blank" rel="noopener" class="contact-card">
+      <span class="contact-label">github</span>
+      <span class="contact-value">@yourusername</span>
+    </a>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer mono">
+  <p>Rohan Mate — built and hosted on GitHub Pages.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
